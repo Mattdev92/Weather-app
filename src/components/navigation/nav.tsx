@@ -2,11 +2,8 @@ import { connect } from 'react-redux';
 import { exampleAction } from 'actions/navigation-action';
 import { Nav } from 'components/navigation/nav.styles';
 import { Dispatch } from 'redux';
+import { Navig, State } from 'components/navigation/nav.types';
 
-interface Navig {
-  author: string;
-  ExampleAction: any;
-}
 const Navigation = ({ author, ExampleAction }: Navig) => {
   console.log(author);
   return (
@@ -16,7 +13,7 @@ const Navigation = ({ author, ExampleAction }: Navig) => {
     </Nav>
   );
 };
-const mapStateToProps = (state: { author: string }) => {
+const mapStateToProps = (state: State) => {
   const { author } = state;
   return { author };
 };
