@@ -1,21 +1,27 @@
 import { connect } from 'react-redux';
 import { exampleAction } from 'actions/navigation-action';
 import { Nav } from 'components/navigation/nav.styles';
+import { Dispatch } from 'redux';
 
-const Navigation = ({ author, ExampleAction }) => {
+interface Navig {
+  author: string;
+  ExampleAction: any;
+}
+const Navigation = ({ author, ExampleAction }: Navig) => {
+  console.log(author);
   return (
     <Nav>
-      <div>Nav</div>
+      <div>Navi</div>
       <button onClick={ExampleAction}>Click me</button>
     </Nav>
   );
 };
-const mapStateToProps = (state) => {
+const mapStateToProps = (state: { author: string }) => {
   const { author } = state;
   return { author };
 };
 
-const mapDispatchToProps = (dispatch) => ({
+const mapDispatchToProps = (dispatch: Dispatch) => ({
   ExampleAction: () => dispatch(exampleAction()),
 });
 
