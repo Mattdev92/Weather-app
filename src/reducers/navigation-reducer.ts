@@ -1,9 +1,10 @@
 const initialState = {
   author: 'unknown',
 };
+
 export default function navigationReducer(
   state = initialState,
-  action: { type: string }
+  action: { type: string; payload?: any }
 ) {
   switch (action.type) {
     case 'EXAMPLE_ACTION':

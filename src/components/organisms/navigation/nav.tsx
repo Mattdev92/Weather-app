@@ -1,20 +1,23 @@
 import { connect } from 'react-redux';
 import { exampleAction } from 'actions/navigation-action';
-import { Nav } from 'components/navigation/nav.styles';
+import { Nav } from 'components/organisms/navigation/nav.styles';
 import { Dispatch } from 'redux';
-import { Navig, State } from 'components/navigation/nav.types';
+import {
+  Navig,
+  NavigationReducer,
+} from 'components/organisms/navigation/nav.types';
+import SearchBar from 'components/molecules/searchBar/searchBar';
 
 const Navigation = ({ author, ExampleAction }: Navig) => {
   console.log(author);
   return (
     <Nav>
-      <div>Navi</div>
-      <button onClick={ExampleAction}>Click me</button>
+      <SearchBar />
     </Nav>
   );
 };
-const mapStateToProps = (state: State) => {
-  const { author } = state;
+const mapStateToProps = ({ navigationReducer }: NavigationReducer) => {
+  const { author } = navigationReducer;
   return { author };
 };
 
