@@ -7,6 +7,7 @@ Implemented solutions
  1. Day forecast displayed in grid view
  2. Weather data fetched from open weather API
  3. Possibility to search for any city
+ 4. Current weather
  
 ## How it works
 ![](weather.gif)
