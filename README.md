@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Shop project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hi ! I've just made my first weather-app application using React & Redux to practisethose technologies.
 
-## Available Scripts
+Implemented solutions
 
-In the project directory, you can run:
+ 1. Day forecast displayed in grid view
+ 2. Weather data fetched from open weather API
+ 3. Possibility to search for any city
+ 
+## How it works
+![](weather.gif)
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Installing
 
-### `npm test`
+What things you need to install  and how to install them
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Project was prepared based on CRA template with custom configurations of react Redux and Styled components with Typescript implementation.
 
-### `npm run build`
+npx install create-react-app --npm
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Add Typescript funcionality
+npm install --save typescript @types/node @types/react @types/react-dom @types/jest
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+State managment:\
+npm install--save react-redux redux
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+styled components\
+npm i styled-components
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+jest and enzyme\
+npm i --save enzyme 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Test
+Unit tests in progress...
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Prettier and Eslint configuration
+Configuration  based on CRA documentation
+https://create-react-app.dev/docs/setting-up-your-editor/#formatting-code-automatically
 
-## Learn More
+## Deployment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Website was deployed using Netlify
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Authors
 
-### Code Splitting
+* **Mateusz Grzejszczyk** - *Initial work* -
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+Free licence
