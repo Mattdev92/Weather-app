@@ -36,3 +36,7 @@ export type SearchBarReducer = {
     city: string;
   };
 };
+export interface ActualCoord {
+  lat: number;
+  lon: number;
+}

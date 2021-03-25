@@ -7,4 +7,7 @@ export const Container = styled.div`
   height: 80vh;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 400px) {
+    grid-template-columns: 1fr;
+  }
 `;

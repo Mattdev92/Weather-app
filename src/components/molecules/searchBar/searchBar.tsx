@@ -12,7 +12,6 @@ import { SearchBarReducer } from 'components/molecules/firstSection/firstSection
 
 const SearchBar = (props: Search): JSX.Element => {
   const [input, setInput] = useState('Warsaw');
-  console.log(props);
   return (
     <Container>
       <form

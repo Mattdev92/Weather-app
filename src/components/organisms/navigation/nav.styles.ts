@@ -14,5 +14,7 @@ export const Nav = styled.nav`
     ${({ theme }) => theme.colors.glassWhite},
     ${({ theme }) => theme.colors.glassWhite2}
   );
-  color: white;
+  @media (max-width: 400px) {
+    height: 5vh;
+  }
 `;

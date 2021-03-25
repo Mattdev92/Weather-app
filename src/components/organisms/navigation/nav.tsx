@@ -9,7 +9,6 @@ import {
 import SearchBar from 'components/molecules/searchBar/searchBar';
 
 const Navigation = ({ author, ExampleAction }: Navig) => {
-  console.log(author);
   return (
     <Nav>
       <SearchBar />

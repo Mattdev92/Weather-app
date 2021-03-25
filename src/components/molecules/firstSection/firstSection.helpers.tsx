@@ -7,6 +7,7 @@ import Stormy from 'assets/icons/storm.png';
 import Snow from 'assets/icons/snow.png';
 import ClearSky from 'assets/icons/clear_sky.png';
 import { Icon } from 'components/molecules/firstSection/firstSection.styles';
+import { Icony } from 'components//atoms/dailyForecast/dailyForecast.styles';
 
 export const getWeatherData = ({
   weather,
@@ -31,27 +32,54 @@ export const kelvinToCelsius = (kelvin: number | undefined): number => {
   return Math.round(kelvin - 273);
 };
 
-export const chooseWeatherIcon = (description: string | undefined): any => {
+export const chooseWeatherIcon = (
+  description: string | undefined,
+  current: boolean
+): any => {
   // const icons = [Cloudy, Sunny, Rainy, Stormy];
   if (description === undefined) {
-    return 0;
+    return 'Loading...';
   }
   if (description.includes('cloud')) {
-    return <Icon src={Cloudy} alt="img" />;
+    return current ? (
+      <Icon src={Cloudy} alt="img" />
+    ) : (
+      <Icony src={Cloudy} alt="img" />
+    );
   }
   if (description.includes('sun')) {
-    return <Icon src={Sunny} alt="img" />;
+    return current ? (
+      <Icon src={Sunny} alt="img" />
+    ) : (
+      <Icony src={Sunny} alt="img" />
+    );
   }
   if (description.includes('rain')) {
-    return <Icon src={Rainy} alt="img" />;
+    return current ? (
+      <Icon src={Rainy} alt="img" />
+    ) : (
+      <Icony src={Rainy} alt="img" />
+    );
   }
   if (description.includes('storm')) {
-    return <Icon src={Stormy} alt="img" />;
+    return current ? (
+      <Icon src={Stormy} alt="img" />
+    ) : (
+      <Icony src={Stormy} alt="img" />
+    );
   }
   if (description.includes('snow')) {
-    return <Icon src={Snow} alt="img" />;
+    return current ? (
+      <Icon src={Snow} alt="img" />
+    ) : (
+      <Icony src={Snow} alt="img" />
+    );
   }
   if (description.includes('clear')) {
-    return <Icon src={ClearSky} alt="img" />;
+    return current ? (
+      <Icon src={ClearSky} alt="img" />
+    ) : (
+      <Icony src={ClearSky} alt="img" />
+    );
   }
 };

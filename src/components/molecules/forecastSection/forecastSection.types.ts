@@ -1,34 +1,20 @@
+import { Details } from 'components/atoms/dailyForecast/dailyForecast.types';
+
 export interface WeatherData {
-  base?: string;
-  name?: string;
-  coord?: {
-    lat: number;
-    lon: number;
-  };
-  main?: {
-    feels_like: number;
-    humidity: number;
-    pressure: number;
-    temp: number;
-    temp_max: number;
-    temp_min: number;
-  };
-  snow?: {
-    '1h': number;
-  };
-  sys?: {
-    country: string;
-  };
-  weather?: [
-    {
-      main: string;
-      description: string;
-    }
-  ];
+  daily?: Details[];
 }
+export type FirstSectionReducer = {
+  firstSectionReducer: {
+    coord: {
+      lat: number;
+      lon: number;
+    };
+    forecast?: boolean;
+  };
+};
 export type Weather = {
-  setWeather: (weather: WeatherData) => void;
-  city: string;
+  setDetails: (details: WeatherData) => void;
   lon: number;
   lat: number;
+  current?: boolean;
 };
