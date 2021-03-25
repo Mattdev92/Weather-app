@@ -1,4 +1,4 @@
-# Shop project
+# Weather App
 
 Hi ! I've just made my first weather-app application using React & Redux to practisethose technologies.
 
