@@ -16,7 +16,9 @@ Implemented solutions
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Installing
+The only thing to run application is to instal node modules by typing "npm install" in console. Then start application by typing "npm start" in console.
+
+### How did I create this project?
 
 What things you need to install  and how to install them
 
